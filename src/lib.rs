@@ -1,7 +1,9 @@
-#[cfg(test)]
-mod tests {
-    #[test]
-    fn it_works() {
-        assert_eq!(2 + 2, 4);
-    }
-}
+mod query_builder;
+use query_builder::IndeedQuery;
+
+mod scraper;
+
+#[macro_use]
+extern crate strum_macros;
+#[macro_use]
+extern crate derive_builder;
